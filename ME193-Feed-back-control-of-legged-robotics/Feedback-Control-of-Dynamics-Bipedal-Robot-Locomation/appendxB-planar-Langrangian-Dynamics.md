@@ -1,6 +1,10 @@
 # CUE
 -  如何坐标转换
--  
+-  如何free chain有多少个自由度？
+-  如何计算kinetic energy？
+-  如何计算potential energy
+-  Lagrangian and Lagrange's Equations
+-  generalized force and torch
 # Kinematic Chains
 
 ### model assumptions
@@ -8,6 +12,7 @@
 - each joint is assumed to be *ideal*: rigid and frictionless
 - links are implicitly assumed *noninterfering*
   - individual links can be arbitrary positions and orientations without contacting one another
+- 二维平面世界！
 
 ## kinematic chain
 - *open* if doesnot contain any loops
