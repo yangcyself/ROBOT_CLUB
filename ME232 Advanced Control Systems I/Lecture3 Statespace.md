@@ -9,7 +9,7 @@ solve $Ax = b$
 $$
 x_{i}=\frac{\operatorname{det}\left[\mathbf{A}^{(i)}\right]}{\operatorname{det}[\mathbf{A}]}
 $$
-where $A^{(i)}$ is another n × n matrix formed by replacing the ithcolumn of A with the vector b.
+where $A^{(i)}$ is another n × n matrix formed by replacing the ith column of A with the vector b.
 
 ## 我的理解
 使用det求得是空间中那堆向量张成的体积（面积）就可以很容易理解，
