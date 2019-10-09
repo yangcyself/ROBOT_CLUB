@@ -18,3 +18,17 @@ $$
 $$
 
 **When soling partial functions, work with $z^{-1}$**
+
+
+## how to recover transfer function from states
+suppose we have the following relationships:
+$$
+x_{k+2} - x_{k+1} + x_k = u_k\\
+y_k = x_{k}+2x_{k+1}
+$$
+
+then the transfer function of $y$ and $u$ is 
+$$
+y_{k+2} - y_{k+1} + y_k = 2u_{k+1}+u_k
+$$
+
