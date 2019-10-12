@@ -22,7 +22,7 @@ $$
 ## By input output linearization
 theorem
 $$
-\text{if } \ddot{y} = -K_D - K_P y\\
+\text{if } \ddot{y} = -K_D\dot{y} - K_P y\\
 \Rightarrow y\rightarrow 0 \text{  exponentially}
 $$
 
@@ -56,3 +56,4 @@ u(x) = L_gL_fh(x)^{-1}\left( -L_f^2h(x)-L_{g_2}L_fh(x) \lambda +v \right)
 $$
 
 So the problem is: How do we compute the $\lambda$
+
