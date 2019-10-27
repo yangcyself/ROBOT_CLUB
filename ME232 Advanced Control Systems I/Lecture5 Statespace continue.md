@@ -65,7 +65,7 @@ $$
 C = \left[\begin{array}c b_0& b_1 &...&b_{n-1} \end{array}\right] 
 $$
 
-### Multiinput multioutput
+### Multi-input multi-output
 如果是一个multi in multi out的系统，比如
 $$
 H(s) = \left[\begin{array}c \frac{2}{s+3}&\frac{10s}{s^2+3s+4}\\0&\frac{1}{s} \end{array}\right] 
