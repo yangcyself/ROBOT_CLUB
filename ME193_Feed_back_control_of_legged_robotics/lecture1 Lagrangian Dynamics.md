@@ -43,7 +43,7 @@ the second constraint is $\gamma\equiv0$, thus the $\frac{dd\gamma}{dt^2} =0$
 ### get the $\ddot{\gamma}$
 
 $$
-\dot{\gamma } = \frac{d\gamma(q)}{dx} \dot{q}
+\dot{\gamma } = \frac{d\gamma(q)}{dq} \dot{q}
 $$
 dot again,
 $$
