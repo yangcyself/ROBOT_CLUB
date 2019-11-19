@@ -6,7 +6,6 @@ Current Courses
   - **Supervisor** : Prof. Hesheng Wang, SJTU 
   - **Maintainer** : Quan
   - The course is about robotics kinematics mainly on manipulator kinematics.
-  - Currently the course is relatively simple.
 - CVX101 Convex Optimization
   - **Supervisor** : Prof. Boyd, Stanford
   - **Maintainer** : Quan
@@ -25,5 +24,11 @@ Current Courses
   - this course is the graduate class about control, but now it is still dealing with linear algebra.
   - **Maintainer**: ycy
 
+
+
+
+#### Wish we all success in applying for Ph.D / Master
+
+![3361574130542_.pic](./3_61f41682b57086d0900288e820fb7036.jpg)
 
 
