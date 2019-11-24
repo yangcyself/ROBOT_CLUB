@@ -1,6 +1,6 @@
 # CUE
 - prove R(AA*) = R(A)
-- Prove Multiply by an invertible matrix TT doesn't change rk
+- Prove Multiply by an invertible matrix T doesn't change rk
 - Similar matrix
   - explain the *abstracted matrix* and *concrete matrix*
   - When we choose the transformation T matrix from C frame to B frame, why we have BT = C, where we are left multiplying the matrix

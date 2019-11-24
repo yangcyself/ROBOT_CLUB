@@ -241,41 +241,7 @@ $$
 3. Then $A_2$ is also a linear map from the span of the set $\left\{\overrightarrow{c_{1}}, \dots c_{n-k_{1}}\right\}$, we can induction on
 
 
-However, I don't know how to make this indunction work.
-
-```python
-# error code
-def findAeigenvalue(A):
-    return np.linalg.eigvals(A)[0]
-def findNullSpaces(A):
-    return scipy.linalg.null_space(A)
-def findRange(A):
-    return scipy.linalg.orth(A)
-def inductiveSchur(A):
-    if(A.shape[0]==1):
-        return np.array([[1]]),np.array([[1]])
-    n = A.shape[0]
-    e = findAeigenvalue(A)
-    B = findNullSpaces(e*np.eye(n)-A) # orthogornal basis of the eigenspace e
-    k = B.shape[1] # the dimension of eigenspace
-    C = findNullSpaces(B.T) # R(A^T) \perp # N(A)
-    U = np.concatenate([B,C],axis = 1) # The Basis U
-    A_ = np.linalg.solve(U,A@C) # because we have A@C = U@A_
-    A2 = A_[k:,:] # the bottom right block
-    AB = np.concatenate([np.concatenate([np.diag([e]*k),np.zeros((n-k,k))],axis = 0),
-                            A_],axis=1)
-    assert(np.allclose(A@U,U@AB))
-    Aans,Uans = inductiveSchur(A2)
-    C_ = C@Uans
-    A_2 = np.linalg.solve(U,A@C_) # because we have A@C = U@A_
-    AB_ = np.concatenate([np.concatenate([np.diag([e]*k),np.zeros((n-k,k))],axis = 0),
-                            A_2],axis=1)
-    U_ = np.concatenate([B,C_],axis = 1) # The Basis U
-    return AB,U_
-A = np.random.random((5,5))
-A_,U = inductiveSchur(A)
-assert(np.allclose(A@U,U@A_))
-```
+The induction implementation is on the next note
 
 ## Numerical construction
 ```python
@@ -308,7 +274,10 @@ is not a fully upper triangular matrix, but quite good.
 
 We can do this because the core operation
 $$
-A_{k+1}=R_{k} Q_{k}=Q_{k}^{T}\left(Q_{k} R_{k}\right) Q_{k}=\left(Q_{k} R_{k}\right)_{\text {in the basis }} Q_{k}^{T}
+A_{k+1}=R_{k} Q_{k}=Q_{k}^{T}\left(Q_{k} R_{k}\right) Q_{k}=\left(Q_{k} R_{k}\right){\text {in the basis }} Q_{k}
 $$
 Does not change the eigenvalues
+
+> However $AB$ always has the same nonzero eigenvalues as $BA$
+> >Note that here does $AB$ and $BA$ have guarantee of the multiplicity?, but here $QR$ and $RQ$ have should be stronger than $AB$ and $BA$
 

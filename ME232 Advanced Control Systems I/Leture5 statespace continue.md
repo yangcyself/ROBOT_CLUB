@@ -150,7 +150,7 @@ CA^2B&CAB&CB&D&...\\
 .... \end{array}\right]  
 \left[\begin{array}c u_0\\0\\0\\0\\... \end{array}\right] 
 +
-\left[\begin{array}c I \\A\\A^2\\....\\... \end{array}\right] x_0
+\left[\begin{array}c C \\CA\\CA^2\\....\\... \end{array}\right] x_0
 $$
 
 ## Markov parameters

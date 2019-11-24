@@ -1,5 +1,5 @@
 # CUE
-- The definition of irreducible
+- The definition of irreducible (polynomial)
   - what is algebracially closed?
   - what is relatively prime?
 - Prove that if p and q are two polynormials that relatively prime, then exist a and b, thus ap + bq = 1
@@ -110,6 +110,8 @@ Then
 2. $p(T)=T^{m}+a_{m-1} T^{m-1}+\cdots+a_{0} I$ acts zero on $U$
 3. If $z$ is a polynomial and $z(T)$ acts by zero on $U$, then $z$ is divisible by $p$.
 4. **The eigenvalues of $T$ on $U$ are prescisely the roots of $p$**
+   1. this is because when the feed the eigenvector in it, it becomes a polynormial of eigenvalue
+   2. Contrast with in any vector if $U$, it is a combination of eigenvalue polynormials and ...
 5. If $q$ is an irreducible polynomial and $Null(q(T))$ has a nonzero intersection with $U$, then $q$ divides $p$.
 
 
@@ -128,6 +130,7 @@ and the set of eigenvalues of C
 3. Suppose p1 and p2 are polynomials such that $p_1(A) = 0$ and $p_2(C)=0$ then $(p_1p_2)(T) = 0$
 
 > 这里面basis的含义是不是比如做了相似矩阵分解之后中间的那个部分？ 否则的话， 怎么可能维度还变小了呢？
+> > 不是，应该是相似变换的左右两个基, 因为$TU \subset U$， 所以才能写成$TG = G\left[\begin{array}c A & B\\0 &C \end{array}\right]$
 
 
 ## The characteristic polynomial

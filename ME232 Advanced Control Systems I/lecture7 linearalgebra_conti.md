@@ -32,7 +32,7 @@ $$
 
 for example the L2 norm
 $$
-\left\|f(x) \right\|_2 \int_a^b |f(x)|^2 dt
+\left\|f(x) \right\|_2 = \int_a^b |f(x)|^2 dt
 $$
 
 ### norm for matrix space

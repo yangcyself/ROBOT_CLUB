@@ -18,7 +18,7 @@
 - initial value and final value theorem
 ## functions to commit to memory:
 
-step -> 1/s
+$step \rightarrow  1/s$
 
 \delta -> 1
 
@@ -60,5 +60,7 @@ $$
 $$
 # the final value theorem
 $$
-\lim _{t \rightarrow \infty} f(t)=\lim _{s \backslash 0} s F(s)
+\lim _{t \rightarrow \infty} f(t)=\lim _{s \rightarrow  0} s F(s)
 $$
+
+Note, when we what to derive properties from the defn, we only have $F(s)=\int_{\sigma}^{\infty} f(t) e^{-s t} d t$, not the opposite direction

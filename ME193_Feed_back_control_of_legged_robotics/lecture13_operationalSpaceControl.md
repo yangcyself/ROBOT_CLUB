@@ -45,7 +45,7 @@ D\ddot{q}+C\dot{q}+G = \Gamma
 $$
 use the notations in paper, is 
 $$
-D\ddot{q}+b+g = \Gamma 
+A\ddot{q}+b+g = \Gamma 
 $$
 
 and we want to get **Task space dynamics**
@@ -107,7 +107,7 @@ Thus we have:
 
 $$
 \begin{aligned}
-    \ddot{x} &= JA^{-1}\left[ F -b-g \right] + \dot{J}\dot{q}\\
+    \ddot{x} &= JA^{-1}\left[ \Gamma  -b-g \right] + \dot{J}\dot{q}\\
     &= JA^{-1}J^{T}F - JA^{-1}b - JA^{-1}g + \dot{J}\dot{q}
 \end{aligned}
 $$
@@ -153,7 +153,7 @@ $$
 \begin{aligned}
     \bar{J}^T\Gamma &= \bar{J}^T\left[ A\ddot{q}+b+g \right] \\
     &= \Lambda J\ddot{q}+ \bar{J}^Tb+ \bar{J}^Tg\\
-    &= \Lambda (J\ddot{q}+\dot{J}\dot{q})+ \bar{J}^Tb - \Gamma \dot{J}\dot{q}+ \bar{J}^Tg\\
+    &= \Lambda (J\ddot{q}+\dot{J}\dot{q})+ \bar{J}^Tb - \Lambda  \dot{J}\dot{q}+ \bar{J}^Tg\\
     &= \Gamma \ddot{x} + \mu +p\\
     &= F
 \end{aligned}
